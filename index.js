@@ -21,9 +21,15 @@ app.get("/:genre", (req, res) => {
   Songs.findById(process.env.SONGS_ID)
     .then((songs) => {
       if (songs) {
-        res.send(songs[genre][Math.floor(Math.random() * songs[genre].length)]);
+        if (songs[genre]) {
+          res.send(
+            songs[genre][Math.floor(Math.random() * songs[genre].length)]
+          );
+        } else {
+          res.status(204).send({ message: "Genre not registered!" });
+        }
       } else {
-        res.status(204).send({ message: "Genre not registered!" });
+        res.status(500).send({ message: "An internal error has occurred" });
       }
     })
     .catch((err) => {
