@@ -32,7 +32,7 @@ API developed to show a little of Brazilian musical culture, providing random mu
         MONGODB_URI ="<YOUR-MONGODB-DATABASE-URI>"
         SONGS_ID = "<COLLECTION-ID>"
     ```
-    > "COLLECTION-ID": Collection where songs are stored by genre..
+    > "COLLECTION-ID": Collection where songs are stored by genre.
 
 3. Then install the project <a href="./package.json">requirements</a> with the command in the terminal:
 
