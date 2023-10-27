@@ -32,13 +32,15 @@
         <li>rap</li>
         <li>pagode</li>
         <li>piseiro</li>
+        <li>pop</li>
       </ul>
 
       <h4>API call example: </h4>
       <div class="w-full h-auto p-4 bg-gray-100 border border-gray-300">
-        <p class="text-left whitespace-pre-line">const axios = require('axios');
-          
-          const url = "http://seuservidor.com/rock"; 
+        <p class="text-left whitespace-pre-line"><span class="text-green-800">// npm i axios</span>
+          const axios = require('axios');
+
+          const url = "https://musicalizing.onrender.com/rock"; 
 
           axios.get(url).then((res) => {
           &nbsp &nbsp console.log(res.data); 
@@ -51,18 +53,17 @@
       <h4>API response example:</h4>
       <div class="w-full h-auto p-4 bg-gray-100 border border-gray-300">
         <p class="text-left  whitespace-pre-line"><span class="text-green-600">// Successful response</span>
-          {"singer": "Los Hermanos", "name": "Do sétimo andar",
-          "link": "https://www.youtube.com/watch?v=jXwU_yLMlXU"}
+          {"singer": "Los Hermanos", "name": "Do sétimo andar", "link": "https://www.youtube.com/watch?v=jXwU_yLMlXU"}
         </p>
 
         <p class="text-left whitespace-pre-line">
           <p class="text-left  whitespace-pre-line"><span class="text-red-600">// Genre not registered in DB</span>
-          {"message":"Genre not registered!"}
-
+          {"message": "Genre not registered!"}
+          
         </p>
 
         <p class="text-left whitespace-pre-line"><span class="text-yellow-600">// Invalid route</span>
-          {"message":"Not Found!"}
+          {"message": "Not Found!"}
         </p>
       </div>
       <p class="mt-4">This is my attempt to show some of the Brazilian music
