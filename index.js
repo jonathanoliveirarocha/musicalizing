@@ -16,20 +16,16 @@ app.get("/", (req, res) => {
 });
 
 app.get("/:genre", (req, res) => {
-  const { genre } = req.params;
+  const genre = req.params.genre.toLowerCase();
 
   Songs.findById(process.env.SONGS_ID)
     .then((songs) => {
-      if (songs) {
-        if (songs[genre]) {
-          res.send(
-            songs[genre][Math.floor(Math.random() * songs[genre].length)]
-          );
-        } else {
-          res.status(204).send({ message: "Genre not registered!" });
-        }
-      } else {
+      if (!songs) {
         res.status(500).send({ message: "An internal error has occurred" });
+      }else if(songs[genre]===undefined){
+        res.status(404).send({ message: "Genre not registered!" });
+      }else{
+        res.send(songs[genre][Math.floor(Math.random() * 3)])
       }
     })
     .catch((err) => {
