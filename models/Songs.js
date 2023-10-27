@@ -28,19 +28,14 @@ const songsSchema = new mongoose.Schema({
   pagode: {
     type: Array,
   },
-  frevo: {
-    type: Array,
-  },
-  baiao: {
-    type: Array,
-  },
   piseiro: {
     type: Array,
   },
-  maracatu: {
+  pop:{
     type: Array,
-  },
+  }
 });
+
 
 const Songs = mongoose.model("Songs", songsSchema);
 
