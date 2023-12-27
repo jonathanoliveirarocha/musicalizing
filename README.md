@@ -1,6 +1,6 @@
 ## Musicalizing
 
-**Accessible project link: <a href="">Musicalizing</a>**
+**Accessible project link: <a href="https://musicalizing.vercel.app/">Musicalizing</a>**
 
 ## Summary:
 
@@ -25,7 +25,7 @@ API developed to show a little of Brazilian musical culture, providing random mu
 
 ### Consuming the API :
 
-**All necessary documentation is available on the application's <a href="">main</a> page**
+**All necessary documentation is available on the application's <a href="https://musicalizing.vercel.app/">main</a> page**
 
 
 ## Folders:

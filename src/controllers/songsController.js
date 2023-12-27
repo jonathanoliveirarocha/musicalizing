@@ -7,19 +7,17 @@ const songsController = {
   },
 
   getSong: async (req, res) => {
+    const genre = req.params.genre.toLowerCase();
     try {
-      const genre = req.params.genre.toLowerCase();
-
       const song = await songsService.getSong(genre, process.env.SONGS_ID);
-      if (song === undefined) {
+
+      if (song === null) {
         return res.status(404).json({ error: "Genre not registered!" });
       } else {
         return res.send(song);
       }
     } catch {
-      return res
-        .status(500)
-        .send({ message: "An internal error has occurred!" });
+      return res.status(500).send({ message: "An internal error has occurred!" });
     }
   },
 };
