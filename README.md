@@ -2,7 +2,7 @@
 
 **Accessible project link: <a href="https://musicalizing.vercel.app/">Musicalizing</a>**
 
-## Summary:
+## Summary
 
 1. [What it is](#what-it-is)
 2. [Running the application locally](#running-the-application-locally)
