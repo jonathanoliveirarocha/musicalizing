@@ -9,7 +9,7 @@
 3. [Folders](#folders)
 4. [Preview](#preview)
 
-## What it is :
+## What it is
 
 API developed to show a little of Brazilian musical culture, providing random music based on a genre passed as a parameter. Main API page developed in <a href="https://tailwindcss.com/">Tailwind CSS</a>.
 
@@ -23,12 +23,12 @@ API developed to show a little of Brazilian musical culture, providing random mu
 - HTML, CSS, JavaScript
 - Tailwind CSS
 
-### Consuming the API :
+### Consuming the API:
 
 **All necessary documentation is available on the application's <a href="https://musicalizing.vercel.app/">main</a> page**
 
 
-## Folders:
+## Folders
 
 - **/src/config:** Defines project settings
 - **/src/controllers:** Defines the request handling functions
@@ -39,7 +39,7 @@ API developed to show a little of Brazilian musical culture, providing random mu
 - **/src/public:** Defines the project's static files
 
 
-## Running the application locally :
+## Running the application locally
 
 1. First, make sure you have <a href="https://nodejs.org/en">Node.js</a> installed on your machine.
 
@@ -58,7 +58,7 @@ API developed to show a little of Brazilian musical culture, providing random mu
 
 4. Then run the “start.bat” file in the root directory.
 
-## Preview :
+## Preview
 
 <table width="100%"> 
 <tr>
